@@ -1,0 +1,56 @@
+//
+//  ViewController.swift
+//  007-可选项的判断
+//
+//  Created by caihongguang on 2018/4/24.
+//  Copyright © 2018年 SYJ. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+//        demo(x: 10, y: nil)
+        
+        demo1(x: nil, y: 10)
+    }
+    
+    //MARK: - ??
+    func demo1(x: Int?, y: Int?)
+    {
+        /*
+         ?? 是一个简单的三目
+         如果有值 使用值
+         如果没有值，使用??后面的值代替
+         */
+        print((x ?? 0) + (y ?? 0))
+        
+        let name : String? = "老王"
+        print((name ?? "") + "你好")
+        //用??可以代替 !强行解包 做非空判断，防止崩溃，比if要简洁
+        // ？？操作符优先级 低 。在使用的时候最好加上 () 包一下
+        
+    }
+    
+    func demo(x: Int?,y: Int?) {
+//        let x: Int? = 10
+//        let y: Int? = 200
+        //1.强行解包有风险
+//            print(x!+y!)
+        //2.使用if 判断，但是容易让代码太多，阅读起来费劲
+        if x != nil && y != nil
+        {
+            print(x!+y!)
+        }else{
+            print("有空值");
+        }
+        
+        
+
+    }
+
+}
+
