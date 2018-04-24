@@ -12,8 +12,68 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        demo2()
     }
+    
+    
+    // MARK: - 数组的遍历
+    func demo2(){
+        let array = ["1","2","30"]
+        //1.按下标遍历
+        for i in 0..<array.count{
+            print(array[i])
+        }
+        print("for in 遍历")
+        //2. for in 遍历
+        for s in array
+        {
+            print(s)
+        }
+        //3 enum block 遍历，同时遍历下标和内容
+        print("同时 遍历下标和内容")
+        //远足 option + click 多按 查看
+        for e in array.enumerated()
+        {
+            print(e.offset)
+            print(e.element)
+        }
+        
+        //4.遍历下标和内容2
+        //n就是索引下标，s就是元素
+        //n/s名字可以随便写
+        for (nnn,sss) in array.enumerated(){
+            print(nnn)
+            print(sss)
+            
+        }
+        
+        print("-----反序遍历")
+        //5.反序遍历
+        for s in array.reversed(){
+            print(s)
+        }
+        //6.反序遍历内容
+        print("-----反序遍历内容 错误")
+        //这样写 是错误写法，内容和索引不匹配
+        for (n,s) in array.reversed().enumerated()
+        {
+            print(n)
+            print(s)
+        }
+        print("-----反序遍历内容 正确")
+        
+        //正确的写法是 先枚举再反序
+        for (n,s) in array.enumerated().reversed()
+        {
+            print(n)
+            print(s)
+        }
+        
+        
+    }
+    
     
     // MARK: - 数组的定义
     func demo1(){
