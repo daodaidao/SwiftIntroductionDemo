@@ -15,8 +15,24 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 //        demo(x: 10, y: nil)
         
-        demo2()
+        demo3()
     }
+    
+    func demo3()
+    {
+        let oName: String? = "老王"
+        //guard let 和 if let 正好相反，不在花括号里的数为有值
+        guard let name = oName else { return print("姓名为 nil") }
+        
+        //代码执行至此， name 一定有值
+        //通常如果有值，可能会有一些逻辑处理，代码比较多，用 if let就会凭空多了一层分支，guard let 降低分支层次多办法 2.0推出。
+        //姓名不为空打印 name
+        print(name)
+        
+        
+    }
+    
+    
     
     //MARK: - if let / var 连用语法，目的就是判断值
     func demo2()
