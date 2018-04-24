@@ -15,7 +15,43 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 //        demo(x: 10, y: nil)
         
-        demo1(x: nil, y: 10)
+        demo2()
+    }
+    
+    //MARK: - if let / var 连用语法，目的就是判断值
+    func demo2()
+    {
+        let oName: String? = "老王"
+        let oAge: Int? = 10
+        if oName != nil && oAge != nil
+        {
+            print(oName! + String(oAge!))
+        }
+            
+            
+        //if let 连用，判断对象的值是否为nil
+        //if var 连用，可以对值进行修改 ， let 不能。
+        //不是单纯的 if
+        if var name = oName,
+           let age = oAge {
+            
+            
+            name = "JAY"
+            
+            //进入分支之后 name 和 age 一定有值，不需要解包
+            // name 和 age 作用域仅在 {} 中
+            print(name + String(age))
+        }
+        else{
+            print("name 或者 age 为nil")
+        }
+            
+            
+      
+        
+        
+        
+        
     }
     
     //MARK: - ??
