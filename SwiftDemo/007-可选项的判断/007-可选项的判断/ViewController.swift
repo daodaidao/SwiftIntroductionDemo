@@ -4,7 +4,8 @@
 //
 //  Created by caihongguang on 2018/4/24.
 //  Copyright © 2018年 SYJ. All rights reserved.
-//
+//该demo 函数例子比较多，需要看视频的话：http://www.iqiyi.com/v_19rrb53h34.html#curid=643661100_c967dc70ac67d70cc900b22a9f710081
+//加群一起学习:733534629
 
 import UIKit
 
@@ -15,7 +16,25 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 //        demo(x: 10, y: nil)
         
-        demo3()
+        demo4(name: "老王", age: 18)
+    }
+    
+    //技巧
+    func demo4(name: String?, age: Int?){
+//        该语法用的很多
+//        if let name = name, let age = age {
+//            //非空的name和 age 仅在 {}内有效！
+//            print(name + String(age))
+//
+//        }
+        
+        //使用同名变量取值，避免命名烦恼，不需要解包
+        guard let name = name else {
+            print("为空")
+            return
+        }
+        print(name)
+        
     }
     
     func demo3()
