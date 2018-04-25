@@ -13,10 +13,53 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        demo2()
+     
+        demo4()
     }
     
+    func demo4(){
+        //定义一个数组，指定类型是 存放Int 的数组，但是没有初始化
+//        var array: [Int]
+//        //给数组进行初始化
+//        array = [Int]()
+        //以上两句代码可以合并成一句
+        var array = [Int]()
+        for i in 0..<8 {
+            array.append(i)
+            
+            //数组容量会在现有基础 *2 ，可以避免每次都要分配空间。提前预分配，提高效率
+            print("容量",array.capacity)
+            //OC 里的 arraywithCapacity 如果初始化指定空间，可以避免插入数据时，重复分配空间，效率会提交一点点。
+            
+            
+        }
+        
+    }
+    
+    //MARK: - 数组的增删改
+    func demo3(){
+        //OC中熟组分可变 NSMutableview (var) 和不可变NSArray (let)
+        
+        var array = ["张三","小芳","小羊"]
+        //追加
+        array.append("老王")
+        print(array)
+        //修改 ，通过下标定位
+        array[0] = "🐂"
+        print(array)
+        
+        //越界
+//        array[5] = "xxx"
+        
+        
+        //删除
+        array.remove(at: 3)
+        print(array)
+        
+        array.removeAll(keepingCapacity: true)
+        
+        
+    }
     
     // MARK: - 数组的遍历
     func demo2(){
