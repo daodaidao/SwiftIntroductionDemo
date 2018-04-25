@@ -14,9 +14,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
      
-        demo4()
+        demo5()
     }
-    
+    // MARK:- 数组合并
+    func demo5() {
+        var array = ["张三","小芳","小羊"]
+        let array2 = ["dao","1"]
+        
+        //将 array2 内容合并到 array中
+        //要合并的数组 类型必须要一致  。比oc简单，灵活
+        array += array2
+        print(array)
+        
+    }
+    // MARK:- 数组容量
     func demo4(){
         //定义一个数组，指定类型是 存放Int 的数组，但是没有初始化
 //        var array: [Int]
