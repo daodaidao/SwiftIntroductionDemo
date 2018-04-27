@@ -16,8 +16,20 @@ class ViewController: UIViewController {
         
 //        print(sum1(num1: 30, num2: 60))
         
-        print(sum1(num1: 50, num2: 60))
-
+//        print(sum1(num1: 50, num2: 60))
+        
+        //测试默认值
+        print(sum3())
+        print(sum3(x: 10, y: 20))
+        print(sum3(x: 10))
+        print(sum3(y: 20))
+    }
+    
+    // MARK: - 函数默认值. 通常参数设置默认值，在调用的时候，可以任意组合参数，如果不指定就是默认值
+    // 有了默认值 一个方法可以做很多事情，swift代码会很灵活，之前oc那个调用方法 都调用最长的
+    func sum3(x: Int = 1, y: Int = 2) ->Int
+    {
+        return x + y
     }
     
     //MARK: - 外部参数
