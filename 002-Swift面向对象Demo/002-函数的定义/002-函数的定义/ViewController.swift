@@ -25,6 +25,28 @@ class ViewController: UIViewController {
         print(sum3(y: 20))
     }
     
+    // MARK: - 无返回值.在阅读第三方代码能够看懂就好
+    /*
+       主要用在闭包
+     - 直接省略
+     - ()
+     - Void
+     
+     */
+    func demo1(){
+        print("哈哈")
+    }
+    
+    // -> 这个箭头 前面是负责执行的语句 执行完传递给后面。
+    func demo2() -> (){
+        print("哈哈")
+    }
+    func demo3() -> Void{
+        print("哈哈")
+    }
+    
+    
+    
     // MARK: - 函数默认值. 通常参数设置默认值，在调用的时候，可以任意组合参数，如果不指定就是默认值
     // 有了默认值 一个方法可以做很多事情，swift代码会很灵活，之前oc那个调用方法 都调用最长的
     func sum3(x: Int = 1, y: Int = 2) ->Int
