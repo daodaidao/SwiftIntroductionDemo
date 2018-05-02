@@ -25,7 +25,7 @@ class Person: NSObject {
         
         print("Person init")
 
-        //oc 实例化过程是先走super，然后再给值，会比swift多一个步骤
+        //oc 实例化过程是先走super，然后再给值，会比swift多一个步骤。所以在底层改了一些东西，宣称比oc快
         name = "zhang"
         //        Property 'self.name' not initialized at super.init call
         //提示给 self.name初始化-》分配空间 ，设置初始值！
