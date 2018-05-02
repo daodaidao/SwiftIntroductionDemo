@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9621C4320994C370058BD38 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9621C4220994C370058BD38 /* Student.swift */; };
 		C9F7C1B520945821000CC938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7C1B420945821000CC938 /* AppDelegate.swift */; };
 		C9F7C1B720945821000CC938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7C1B620945821000CC938 /* ViewController.swift */; };
 		C9F7C1BA20945821000CC938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F7C1B820945821000CC938 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9621C4220994C370058BD38 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		C9F7C1B120945821000CC938 /* 008-构造函数.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "008-构造函数.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F7C1B420945821000CC938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9F7C1B620945821000CC938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				C9F7C1B420945821000CC938 /* AppDelegate.swift */,
 				C9F7C1B620945821000CC938 /* ViewController.swift */,
 				C9F7C1E22094586B000CC938 /* Person.swift */,
+				C9621C4220994C370058BD38 /* Student.swift */,
 				C9F7C1B820945821000CC938 /* Main.storyboard */,
 				C9F7C1BB20945822000CC938 /* Assets.xcassets */,
 				C9F7C1BD20945822000CC938 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 				C9F7C1E32094586B000CC938 /* Person.swift in Sources */,
 				C9F7C1B720945821000CC938 /* ViewController.swift in Sources */,
 				C9F7C1B520945821000CC938 /* AppDelegate.swift in Sources */,
+				C9621C4320994C370058BD38 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

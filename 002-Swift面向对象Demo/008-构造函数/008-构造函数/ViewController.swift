@@ -4,7 +4,7 @@
 //
 //  Created by caihongguang on 2018/4/28.
 //  Copyright © 2018年 SYJ. All rights reserved.
-//
+//http://www.iqiyi.com/v_19rrb58h4w.html#curid=643747500_91d5fd0c346320cf44240c9a50bf8307   
 
 import UIKit
 /*
@@ -21,8 +21,14 @@ class ViewController: UIViewController {
         // swift中 对应一个函数  init()构造函数，作用：给成员变量分配空间，初始化成员变量
         //在swift中，所有类都默认有一个命名空间。
         //OC定义类的时候会有前缀。
-        let p = Person()
-        print(p)
+        
+        
+        //swift中对应一个函数 init()构造函数。 作用：给成员变量分配空间，初始化成员变量
+//        let p = Person()
+        let s = Student()
+        
+        print(s.name + "-------" + s.no)
+        
         
         
     }
