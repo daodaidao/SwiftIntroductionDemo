@@ -1,0 +1,33 @@
+//
+//  ViewController.swift
+//  008-构造函数
+//
+//  Created by caihongguang on 2018/4/28.
+//  Copyright © 2018年 SYJ. All rights reserved.
+//
+
+import UIKit
+/*
+在swift里，默认同一个项目中(同一个命名空间下)，所有的类都是共享的，可以直接访问，不需要 import
+ 所有对象的属性 var ,也可以直接访问到
+ */
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //实力化 person
+         //()-> alloc / init
+        // swift中 对应一个函数  init()构造函数，作用：给成员变量分配空间，初始化成员变量
+        //在swift中，所有类都默认有一个命名空间。
+        //OC定义类的时候会有前缀。
+        let p = Person()
+        print(p)
+        
+        
+    }
+ 
+
+
+}
+
