@@ -13,7 +13,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
+        let p = Person(name: "老王", age: 108)
+        print(p?.name ?? "不对")
+        
+        // URL的构造函数可以返回 nil
+        //init?(string:String )构造函数可以返回 nil
         let url = URL(string: "http://www.baidu.com")
         
         //发起网络请求
